@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="BonusKong - Unlock massive casino bonuses with primate power. Welcome package up to €3,000 + 350 Free Spins. Licensed casino with weekly cashback.">
+<title>BonusKong - Gorilla-Sized Casino Bonuses | €3,000 Welcome Package</title>
+<link rel="alternate" hreflang="en-GB" href="https://bonuskong.org/" />
+<link rel="alternate" hreflang="de-DE" href="https://bonuskong.org/de/" />
+<link rel="alternate" hreflang="fr-FR" href="https://bonuskong.org/fr/" />
+<link rel="alternate" hreflang="es-ES" href="https://bonuskong.org/es/" />
+<link rel="alternate" hreflang="it-IT" href="https://bonuskong.org/it/" />
+<link rel="alternate" hreflang="el-GR" href="https://bonuskong.org/gr/" />
+<link rel="alternate" hreflang="nl-NL" href="https://bonuskong.org/nl/" />
+<link rel="alternate" hreflang="x-default" href="https://bonuskong.org/" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --clr-jungle-dark: #0a1612;
+  --clr-jungle-mid: #1a2f26;
+  --clr-jungle-surface: #243830;
+  --clr-jungle-accent: #2d4a3e;
+  --clr-banana: #ffd93d;
+  --clr-banana-glow: #ffe066;
+  --clr-vine: #4a7c59;
+  --clr-vine-bright: #5fa372;
+  --clr-text-primary: #f0f4f2;
+  --clr-text-muted: #a8bfb3;
+  --clr-text-dark: #0a1612;
+  --clr-success: #6dd47e;
+  --clr-border: rgba(90, 127, 107, 0.2);
+  
+  --space-xs: clamp(0.25rem, 1vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 2vw, 0.75rem);
+  --space-md: clamp(1rem, 3vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 4vw, 2.5rem);
+  --space-xl: clamp(2rem, 6vw, 4rem);
+  --space-xxl: clamp(3rem, 8vw, 6rem);
+  
+  --text-sm: clamp(0.875rem, 2vw, 1rem);
+  --text-base: clamp(1rem, 2.5vw, 1.125rem);
+  --text-lg: clamp(1.25rem, 3vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 4vw, 2rem);
+  --text-xxl: clamp(2rem, 6vw, 3.5rem);
+  
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--clr-jungle-dark);
+  color: var(--clr-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--clr-jungle-mid);
+  border-bottom: 2px solid var(--clr-banana);
+  box-shadow: var(--shadow-md);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--clr-text-primary);
+}
+
+.logo__icon {
+  position: relative;
+  width: clamp(2.5rem, 8vw, 3.5rem);
+  height: clamp(2.5rem, 8vw, 3.5rem);
+  background: linear-gradient(135deg, var(--clr-vine) 0%, var(--clr-vine-bright) 100%);
+  border-radius: 50%;
+  border: 3px solid var(--clr-banana);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo__icon::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: var(--clr-jungle-dark);
+  border-radius: 50%;
+}
+
+.logo__icon::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background: var(--clr-banana);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.logo__text {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.logo__text--accent {
+  color: var(--clr-banana);
+}
+
+.header__actions {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--clr-banana) 0%, var(--clr-banana-glow) 100%);
+  color: var(--clr-text-dark);
+  box-shadow: 0 4px 16px rgba(255, 217, 61, 0.3);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 217, 61, 0.5);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--clr-text-primary);
+  border: 2px solid var(--clr-border);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+  border-color: var(--clr-banana);
+  background: rgba(255, 217, 61, 0.1);
+}
+
+.btn--large {
+  padding: 1.25rem 2.5rem;
+  font-size: var(--text-lg);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--clr-banana);
+  outline-offset: 3px;
+}
+
+.hero {
+  position: relative;
+  padding: var(--space-xl) var(--space-md);
+  background: linear-gradient(180deg, var(--clr-jungle-mid) 0%, var(--clr-jungle-dark) 100%);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(74, 124, 89, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 217, 61, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 217, 61, 0.15);
+  border: 1px solid var(--clr-banana);
+  border-radius: var(--radius-full);
+  color: var(--clr-banana);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+  width: fit-content;
+}
+
+.hero__title {
+  font-size: var(--text-xxl);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.hero__title--highlight {
+  color: var(--clr-banana);
+  display: block;
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  color: var(--clr-text-muted);
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.hero__features {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--clr-border);
+}
+
+.feature-card__icon {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--clr-banana) 0%, var(--clr-banana-glow) 100%);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-text-dark);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.feature-card__content h3 {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.feature-card__content p {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+}
+
+.section {
+  padding: var(--space-xl) var(--space-md);
+}
+
+.section--alt {
+  background: var(--clr-jungle-mid);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.section__title {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
+  position: relative;
+  display: inline-block;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 4px;
+  background: var(--clr-banana);
+  border-radius: var(--radius-full);
+}
+
+.section__subtitle {
+  font-size: var(--text-base);
+  color: var(--clr-text-muted);
+  max-width: 600px;
+  margin: var(--space-md) auto 0;
+}
+
+.bonus-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.bonus-card {
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 2px solid var(--clr-border);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bonus-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--clr-banana) 0%, var(--clr-banana-glow) 100%);
+}
+
+.bonus-card:hover,
+.bonus-card:focus-within {
+  border-color: var(--clr-banana);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.bonus-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.bonus-card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: linear-gradient(135deg, var(--clr-vine) 0%, var(--clr-vine-bright) 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-banana);
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.bonus-card__value {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  color: var(--clr-banana);
+  line-height: 1;
+}
+
+.bonus-card__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.bonus-card__description {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+}
+
+.bonus-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-sm);
+}
+
+.bonus-card__detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+}
+
+.bonus-card__detail i {
+  color: var(--clr-success);
+  width: 1.25rem;
+}
+
+.bonus-card__terms {
+  font-size: 0.75rem;
+  color: var(--clr-text-muted);
+  margin-bottom: var(--space-md);
+  line-height: 1.4;
+}
+
+.games-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
+  margin-bottom: var(--space-lg);
+}
+
+.game-card {
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--clr-border);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.game-card:hover,
+.game-card:focus-within {
+  border-color: var(--clr-banana);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.game-card__image {
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--clr-vine) 0%, var(--clr-jungle-accent) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+}
+
+.game-card__badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: var(--clr-banana);
+  color: var(--clr-text-dark);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.game-card__info {
+  padding: var(--space-sm);
+}
+
+.game-card__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-card__provider {
+  font-size: 0.75rem;
+  color: var(--clr-text-muted);
+}
+
+.providers-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+}
+
+.provider-card {
+  background: var(--clr-jungle-surface);
+  border: 2px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16/9;
+  transition: all 0.3s ease;
+}
+
+.provider-card:hover,
+.provider-card:focus-within {
+  border-color: var(--clr-banana);
+  transform: scale(1.05);
+}
+
+.provider-card__name {
+  font-size: var(--text-base);
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-section {
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid var(--clr-border);
+}
+
+.info-section h3 {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--clr-banana);
+}
+
+.info-section p {
+  font-size: var(--text-base);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+  color: var(--clr-text-muted);
+}
+
+.info-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.info-section li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: var(--text-base);
+}
+
+.info-section li::before {
+  content: '→';
+  color: var(--clr-banana);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.payment-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
+  padding: var(--space-lg);
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-lg);
+}
+
+.payment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.payment-icon:hover {
+  background: rgba(255, 217, 61, 0.1);
+  transform: scale(1.1);
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.faq__item {
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--clr-border);
+  overflow: hidden;
+}
+
+.faq__question {
+  width: 100%;
+  padding: var(--space-md);
+  background: transparent;
+  border: none;
+  color: var(--clr-text-primary);
+  font-size: var(--text-base);
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  min-height: 44px;
+  transition: all 0.3s ease;
+}
+
+.faq__question:hover,
+.faq__question:focus-visible {
+  background: rgba(255, 217, 61, 0.1);
+  color: var(--clr-banana);
+}
+
+.faq__question i {
+  transition: transform 0.3s ease;
+}
+
+.faq__item.active .faq__question i {
+  transform: rotate(180deg);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq__item.active .faq__answer {
+  max-height: 500px;
+}
+
+.faq__answer-content {
+  padding: 0 var(--space-md) var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+}
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-lg);
+  background: var(--clr-jungle-surface);
+  border-radius: var(--radius-lg);
+}
+
+.trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.trust-badge__icon {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, var(--clr-vine) 0%, var(--clr-vine-bright) 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-banana);
+  font-size: 2rem;
+}
+
+.trust-badge__text {
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.footer {
+  background: var(--clr-jungle-mid);
+  border-top: 2px solid var(--clr-banana);
+  padding: var(--space-xl) var(--space-md) var(--space-md);
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  margin-bottom: var(--space-xl);
+}
+
+.footer__section h4 {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--clr-banana);
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer__link {
+  color: var(--clr-text-muted);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover,
+.footer__link:focus-visible {
+  color: var(--clr-banana);
+}
+
+.footer__bottom {
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--clr-border);
+  text-align: center;
+}
+
+.footer__license {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+.footer__copyright {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+}
+
+.responsible-gaming {
+  background: rgba(255, 217, 61, 0.1);
+  border: 1px solid var(--clr-banana);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.responsible-gaming h4 {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--clr-banana);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.responsible-gaming p {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.responsible-gaming__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.age-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: var(--clr-banana);
+  color: var(--clr-text-dark);
+  font-weight: 900;
+  font-size: var(--text-base);
+  border-radius: 50%;
+  border: 3px solid var(--clr-text-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .logo__text {
+    display: inline;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--clr-banana);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--clr-banana);
+  color: var(--clr-text-dark);
+}
+</style>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<script src="/script/reut.js?t=1777642200" async></script>
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="canonical" href="https://bonuskong.org">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__container">
+    <a href="#" class="logo" aria-label="BonusKong Casino Home">
+      <div class="logo__icon" aria-hidden="true"></div>
+      <span class="logo__text">Bonus<span class="logo__text--accent">Kong</span></span>
+    </a>
+    <div class="header__actions">
+      <a href="#__WY2DS_2UL__" class="btn btn--secondary" rel="nofollow" target="_blank">Login</a>
+      <a href="#__WY2DS_2UL__" class="btn btn--primary" rel="nofollow" target="_blank">
+        <i class="fas fa-gift" aria-hidden="true"></i> Join Now
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__container container">
+      <div>
+        <div class="hero__badge">
+          <i class="fas fa-crown" aria-hidden="true"></i>
+          <span>Premium Welcome Package</span>
+        </div>
+        <h1 class="hero__title">
+          Swing Into Gorilla-Sized Wins
+          <span class="hero__title--highlight">€3,000 + 350 Free Spins</span>
+        </h1>
+        <p class="hero__subtitle">
+          Claim your territory in the jungle of online gaming. Triple deposit match across your first three deposits, plus daily free spins to dominate the reels.
+        </p>
+        <div class="hero__cta">
+          <a href="#__WY2DS_2UL__" class="btn btn--primary btn--large" rel="nofollow" target="_blank">
+            <i class="fas fa-rocket" aria-hidden="true"></i> Claim €3,000 Bonus
+          </a>
+        </div>
+        <div class="hero__features">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fas fa-bolt" aria-hidden="true"></i>
+            </div>
+            <div class="feature-card__content">
+              <h3>Instant Deposits</h3>
+              <p>Play within minutes</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fas fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <div class="feature-card__content">
+              <h3>Licensed & Secure</h3>
+              <p>SSL encrypted platform</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fas fa-headset" aria-hidden="true"></i>
+            </div>
+            <div class="feature-card__content">
+              <h3>24/7 Support</h3>
+              <p>Always here to help</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Massive Welcome Rewards</h2>
+        <p class="section__subtitle">Three powerful deposit bonuses designed to maximise your gaming sessions from day one</p>
+      </div>
+      <div class="bonus-grid">
+        <article class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">100%</div>
+          </div>
+          <h3 class="bonus-card__title">First Deposit Bonus</h3>
+          <p class="bonus-card__description">Double your opening deposit up to €1,000 plus 100 free spins on Gates of Olympus. Start your journey with maximum firepower.</p>
+          <div class="bonus-card__details">
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Match: 100% up to €1,000</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Free Spins: 100 (50 daily × 2 days)</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Minimum Deposit: €15</span>
+            </div>
+          </div>
+          <p class="bonus-card__terms">30x wagering on deposit and bonus. Free spins wagered at 35x. Valid for 7 days. Full terms apply.</p>
+          <a href="#__WY2DS_2UL__" class="btn btn--primary" rel="nofollow" target="_blank" style="width: 100%;">Claim First Bonus</a>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-gem" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">50%</div>
+          </div>
+          <h3 class="bonus-card__title">Second Deposit Bonus</h3>
+          <p class="bonus-card__description">Keep the momentum going with a 50% match up to €1,000 plus another 100 free spins to explore more winning opportunities.</p>
+          <div class="bonus-card__details">
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Match: 50% up to €1,000</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Free Spins: 100 (50 daily × 2 days)</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Minimum Deposit: €15</span>
+            </div>
+          </div>
+          <p class="bonus-card__terms">30x wagering on deposit and bonus. Free spins wagered at 35x. Valid for 7 days. Full terms apply.</p>
+          <a href="#__WY2DS_2UL__" class="btn btn--primary" rel="nofollow" target="_blank" style="width: 100%;">Activate Bonus</a>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-crown" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">100%</div>
+          </div>
+          <h3 class="bonus-card__title">Third Deposit Bonus</h3>
+          <p class="bonus-card__description">Complete your welcome package with a final 100% match up to €1,000 and a massive 150 free spins for extended gameplay.</p>
+          <div class="bonus-card__details">
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Match: 100% up to €1,000</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Free Spins: 150 (50 daily × 3 days)</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Minimum Deposit: €15</span>
+            </div>
+          </div>
+          <p class="bonus-card__terms">30x wagering on deposit and bonus. Free spins wagered at 35x. Valid for 7 days. Full terms apply.</p>
+          <a href="#__WY2DS_2UL__" class="btn btn--primary" rel="nofollow" target="_blank" style="width: 100%;">Complete Package</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Ongoing Promotions</h2>
+        <p class="section__subtitle">The bonuses don't stop after your welcome package — enjoy regular rewards every week</p>
+      </div>
+      <div class="bonus-grid">
+        <article class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-hand-holding-dollar" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">25%</div>
+          </div>
+          <h3 class="bonus-card__title">Weekly Cashback</h3>
+          <p class="bonus-card__description">Receive up to 25% of your net losses back every week. Your VIP level determines your cashback percentage, turning losses into opportunities.</p>
+          <div class="bonus-card__details">
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Cashback: Up to 25% on losses</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Frequency: Every Monday</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Calculated on real money losses only</span>
+            </div>
+          </div>
+          <p class="bonus-card__terms">Cashback percentage varies by loyalty level. Credited automatically. No wagering on cashback funds.</p>
+          <a href="#__WY2DS_2UL__" class="btn btn--secondary" rel="nofollow" target="_blank" style="width: 100%;">Learn More</a>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-calendar-day" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">100%</div>
+          </div>
+          <h3 class="bonus-card__title">Sunday Reload Bonus</h3>
+          <p class="bonus-card__description">Start your week strong with a deposit bonus every Sunday. Higher VIP levels unlock bigger bonuses, from 50% up to 100% match.</p>
+          <div class="bonus-card__details">
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Match: 50-100% based on VIP level</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Max Bonus: €50 to €1,000</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Available: Every Sunday</span>
+            </div>
+          </div>
+          <p class="bonus-card__terms">Bonus percentage and maximum amount scale with loyalty tier. Standard wagering requirements apply.</p>
+          <a href="#__WY2DS_2UL__" class="btn btn--secondary" rel="nofollow" target="_blank" style="width: 100%;">View Details</a>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-ticket" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">€50K</div>
+          </div>
+          <h3 class="bonus-card__title">Monthly Raffle</h3>
+          <p class="bonus-card__description">Collect raffle tickets throughout the month by playing your favourite games. Monthly draw awards prizes from a €50,000 prize pool.</p>
+          <div class="bonus-card__details">
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Prize Pool: €50,000 monthly</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Earn tickets through gameplay</span>
+            </div>
+            <div class="bonus-card__detail">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Draw: Last day of each month</span>
+            </div>
+          </div>
+          <p class="bonus-card__terms">Tickets earned automatically during qualifying play. More tickets increase winning chances. Winners announced monthly.</p>
+          <a href="#__WY2DS_2UL__" class="btn btn--secondary" rel="nofollow" target="_blank" style="width: 100%;">Join Raffle</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Featured Games</h2>
+        <p class="section__subtitle">Explore our handpicked selection of top-performing slots and table games</p>
+      </div>
+      <div class="games-grid">
+        <div class="game-card">
+          <div class="game-card__image">
+            <span class="game-card__badge">Hot</span>
+            <i class="fas fa-bolt" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Gates of Olympus</h3>
+            <p class="game-card__provider">Pragmatic Play</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <span class="game-card__badge">New</span>
+            <i class="fas fa-gem" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Book of Dead</h3>
+            <p class="game-card__provider">Play'n GO</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <i class="fas fa-fire" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Starburst</h3>
+            <p class="game-card__provider">NetEnt</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <i class="fas fa-diamond" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Gonzo's Quest</h3>
+            <p class="game-card__provider">NetEnt</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <span class="game-card__badge">Hot</span>
+            <i class="fas fa-crown" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Big Bass Bonanza</h3>
+            <p class="game-card__provider">Pragmatic Play</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <i class="fas fa-clover" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Jammin' Jars</h3>
+            <p class="game-card__provider">Push Gaming</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <i class="fas fa-coins" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Money Train 3</h3>
+            <p class="game-card__provider">Relax Gaming</p>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-card__image">
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="game-card__info">
+            <h3 class="game-card__title">Sweet Bonanza</h3>
+            <p class="game-card__provider">Pragmatic Play</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-lg);">
+        <a href="#__WY2DS_2UL__" class="btn btn--primary btn--large" rel="nofollow" target="_blank">
+          View All 3,000+ Games
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Premium Game Providers</h2>
+        <p class="section__subtitle">Partnered with the industry's leading software developers to deliver exceptional gaming experiences</p>
+      </div>
+      <div class="providers-grid">
+        <div class="provider-card">
+          <p class="provider-card__name">Pragmatic Play</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">NetEnt</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Play'n GO</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Evolution</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Push Gaming</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Relax Gaming</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Microgaming</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Quickspin</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Yggdrasil</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Red Tiger</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Big Time Gaming</p>
+        </div>
+        <div class="provider-card">
+          <p class="provider-card__name">Thunderkick</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">About BonusKong Casino</h2>
+      </div>
+      <div class="info-section">
+        <p>BonusKong Casino launched with a singular mission: to deliver gorilla-sized bonuses and premium gaming experiences to players across the globe. Our platform combines cutting-edge technology with an extensive game library featuring over 3,000 titles from the industry's most respected software providers.</p>
+        
+        <p>What sets BonusKong apart is our commitment to player value. Our welcome package of €3,000 plus 350 free spins represents one of the most generous offers in the online casino market, designed to give new players substantial playing power from their very first deposit. We don't stop there — our weekly cashback programme returns up to 25% of losses, whilst our Sunday reload bonuses and monthly €50,000 raffle ensure that rewards keep coming long after you've claimed your welcome bonus.</p>
+        
+        <p>Security and fairness form the foundation of our operation. We hold a valid gaming licence from Curaçao eGaming, ensuring all our games undergo rigorous testing for fairness and randomness. Our platform employs SSL encryption technology to protect all financial transactions and personal data, giving you complete peace of mind whilst you play.</p>
+        
+        <p>Our game selection spans every category imaginable — from classic three-reel slots to modern video slots with innovative mechanics like Megaways and cluster pays. Table game enthusiasts can enjoy multiple variants of blackjack, roulette, and baccarat, whilst our live casino section powered by Evolution Gaming brings the authentic casino floor experience directly to your screen with professional dealers streaming in real-time.</p>
+        
+        <p>We've invested heavily in creating a seamless user experience across all devices. Whether you're playing on desktop, tablet, or mobile, you'll enjoy the same smooth performance, quick loading times, and intuitive navigation. Our deposit and withdrawal processes support multiple payment methods including credit cards, e-wallets, and cryptocurrency, with most deposits processed instantly so you can start playing without delay.</p>
+        
+        <p>Customer support stands as a cornerstone of our service. Our dedicated team operates 24 hours a day, seven days a week, ready to assist with any queries via live chat or email. We pride ourselves on response times measured in minutes, not hours, ensuring you're never left waiting when you need assistance.</p>
+        
+        <p>BonusKong Casino takes responsible gambling seriously. We provide comprehensive tools to help you maintain control over your gaming, including deposit limits, loss limits, session reminders, and self-exclusion options. Our staff receive training to identify problem gambling behaviours and can direct players to professional support organisations when needed.</p>
+        
+        <p>Join the BonusKong family today and discover why thousands of players trust us for their online gaming entertainment. With industry-leading bonuses, a vast game selection, robust security measures, and exceptional customer service, we've created a casino platform that truly puts players first.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">How to Get Started</h2>
+        <p class="section__subtitle">Begin your BonusKong journey in three simple steps</p>
+      </div>
+      <div class="bonus-grid">
+        <div class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-user-plus" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">01</div>
+          </div>
+          <h3 class="bonus-card__title">Create Your Account</h3>
+          <p class="bonus-card__description">Register in under two minutes by providing basic details. No credit card required to sign up — only when you're ready to make your first deposit.</p>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-wallet" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">02</div>
+          </div>
+          <h3 class="bonus-card__title">Make Your Deposit</h3>
+          <p class="bonus-card__description">Choose from multiple secure payment methods and deposit from as little as €15. Your funds appear instantly, and your welcome bonus activates automatically.</p>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-card__header">
+            <div class="bonus-card__icon">
+              <i class="fas fa-gamepad" aria-hidden="true"></i>
+            </div>
+            <div class="bonus-card__value">03</div>
+          </div>
+          <h3 class="bonus-card__title">Start Playing</h3>
+          <p class="bonus-card__description">Browse over 3,000 games, claim your free spins on Gates of Olympus, and start building your balance with your doubled deposit funds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Payment Methods</h2>
+        <p class="section__subtitle">Fast, secure deposits and withdrawals with your preferred payment option</p>
+      </div>
+      <div class="payment-grid">
+        <div class="payment-icon" title="Visa">
+          <i class="fab fa-cc-visa" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Mastercard">
+          <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Bitcoin">
+          <i class="fab fa-bitcoin" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Ethereum">
+          <i class="fab fa-ethereum" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Litecoin">
+          <i class="fas fa-coins" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Bank Transfer">
+          <i class="fas fa-building-columns" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Apple Pay">
+          <i class="fab fa-apple-pay" aria-hidden="true"></i>
+        </div>
+        <div class="payment-icon" title="Google Pay">
+          <i class="fab fa-google-pay" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="info-section" style="margin-top: var(--space-lg);">
+        <h3>Deposit & Withdrawal Information</h3>
+        <ul>
+          <li>Minimum deposit: €15 across most methods</li>
+          <li>Minimum withdrawal: €50 (may vary by payment method)</li>
+          <li>Withdrawals processed within 3 business days</li>
+          <li>Daily withdrawal limit: €1,000 (higher for VIP players)</li>
+          <li>Weekly withdrawal limit: €3,000</li>
+          <li>Monthly withdrawal limit: €10,000</li>
+          <li>All transactions protected by SSL encryption</li>
+          <li>Identity verification required before first withdrawal</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Security & Fair Play</h2>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <div class="trust-badge__icon">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+          </div>
+          <p class="trust-badge__text">Licensed by<br>Curaçao eGaming</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge__icon">
+            <i class="fas fa-lock" aria-hidden="true"></i>
+          </div>
+          <p class="trust-badge__text">SSL Encrypted<br>Transactions</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge__icon">
+            <i class="fas fa-dice" aria-hidden="true"></i>
+          </div>
+          <p class="trust-badge__text">Certified<br>RNG Games</p>
+        </div>
+        <div class="trust-badge">
+          <div class="trust-badge__icon">
+            <i class="fas fa-shield-halved" aria-hidden="true"></i>
+          </div>
+          <p class="trust-badge__text">Responsible<br>Gaming Tools</p>
+        </div>
+      </div>
+      <div class="info-section" style="margin-top: var(--space-xl);">
+        <h3>Our Commitment to Fairness</h3>
+        <p>BonusKong Casino operates under a valid gaming licence issued by Curaçao eGaming, one of the industry's most respected regulatory bodies. This licence ensures we meet strict standards for player protection, game fairness, and financial security.</p>
+        
+        <p>All games on our platform utilise Random Number Generator (RNG) technology that has been independently tested and certified. This ensures every spin, card deal, and dice roll produces genuinely random results that cannot be predicted or manipulated by either the casino or the player. Our RNG systems undergo regular audits to maintain certification and guarantee ongoing fairness.</p>
+        
+        <p>We employ bank-grade SSL encryption across our entire platform, protecting all data transmissions between your device and our servers. Your personal information, payment details, and gaming activity remain completely confidential and secure from unauthorised access.</p>
+        
+        <p>Our partnership with established payment processors adds another layer of security to financial transactions. We never store complete credit card details on our servers, instead relying on tokenised payment systems that meet PCI DSS compliance standards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>How do I claim the welcome bonus?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              The welcome bonus activates automatically when you make your first deposit of €15 or more. No promo codes required. Your deposit will be matched 100% up to €1,000, and your first batch of 50 free spins will be credited immediately. The remaining 50 free spins arrive the following day. Simply deposit and start playing to claim your bonus.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What are the wagering requirements?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              The welcome package requires 30x wagering on both the deposit and bonus amounts. For example, if you deposit €100 and receive a €100 bonus, you'll need to wager €6,000 (€200 × 30) before you can withdraw. Free spins winnings carry a 35x wagering requirement. You have 7 days to complete the wagering from the moment the bonus is credited.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>How long do withdrawals take?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              We process withdrawal requests within 3 business days. Once approved, the time for funds to reach you depends on your chosen payment method. E-wallets typically arrive within 24 hours, credit/debit cards take 3-5 business days, and bank transfers may take 5-7 business days. Your first withdrawal requires identity verification, which may add 1-2 days to the process.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Can I play on mobile devices?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Absolutely. BonusKong Casino is fully optimised for mobile play through your device's web browser — no app download required. Simply visit bonuskong.org from your smartphone or tablet, log in, and you'll have access to the complete game library, banking options, and customer support. The mobile experience mirrors the desktop version with touch-optimised controls.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Is BonusKong Casino licensed and regulated?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Yes, we operate under a valid gaming licence issued by Curaçao eGaming. This licence ensures we adhere to strict regulations regarding player protection, fair gaming, secure transactions, and responsible gambling practices. All our games use certified Random Number Generators that undergo regular independent audits to guarantee fairness.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What happens if I forget my password?</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-content">
+              Click the "Forgot Password" link on the login page. Enter the email address associated with your account, and we'll send you a password reset link. Follow the instructions in the email to create a new password. If you don't receive the email within a few minutes, check your spam folder or contact our support team for assistance.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="responsible-gaming">
+        <h4>
+          <span class="age-badge">18+</span>
+          Responsible Gaming Commitment
+        </h4>
+        <p>BonusKong Casino is committed to promoting responsible gambling practices. We provide tools to help you maintain control over your gaming activity, including deposit limits, loss limits, session time reminders, and self-exclusion options. Gambling should remain entertainment, never a way to solve financial problems.</p>
+        <p>If you feel your gambling is becoming problematic, we encourage you to seek help from professional organisations:</p>
+        <div class="responsible-gaming__links">
+          <a href="https://www.begambleaware.org" class="btn btn--secondary" rel="nofollow" target="_blank">BeGambleAware.org</a>
+          <a href="https://www.gamcare.org.uk" class="btn btn--secondary" rel="nofollow" target="_blank">GamCare.org.uk</a>
+          <a href="https://www.gamblingtherapy.org" class="btn btn--secondary" rel="nofollow" target="_blank">GamblingTherapy.org</a>
+        </div>
+        <p style="margin-top: var(--space-md);">You must be 18 years or older to register and play. Underage gambling is strictly prohibited. We employ age verification procedures and reserve the right to request proof of age at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: linear-gradient(135deg, var(--clr-jungle-mid) 0%, var(--clr-jungle-dark) 100%); text-align: center;">
+    <div class="container">
+      <h2 class="section__title" style="font-size: var(--text-xxl); margin-bottom: var(--space-md);">Ready to Claim Your Territory?</h2>
+      <p style="font-size: var(--text-lg); color: var(--clr-text-muted); margin-bottom: var(--space-xl); max-width: 600px; margin-left: auto; margin-right: auto;">Join BonusKong Casino today and unlock €3,000 in bonuses plus 350 free spins. Your jungle adventure starts now.</p>
+      <a href="#__WY2DS_2UL__" class="btn btn--primary btn--large" rel="nofollow" target="_blank">
+        <i class="fas fa-rocket" aria-hidden="true"></i> Create Account & Claim Bonus
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__grid">
+      <div class="footer__section">
+        <a href="#" class="logo" style="margin-bottom: var(--space-md);" aria-label="BonusKong Casino">
+          <div class="logo__icon" aria-hidden="true"></div>
+          <span class="logo__text">Bonus<span class="logo__text--accent">Kong</span></span>
+        </a>
+        <p style="font-size: var(--text-sm); color: var(--clr-text-muted); line-height: 1.6;">Gorilla-sized bonuses and premium gaming experiences since 2024. Licensed, secure, and player-focused.</p>
+      </div>
+      <div class="footer__section">
+        <h4>Casino</h4>
+        <ul class="footer__links">
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Slots</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Live Casino</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Table Games</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Jackpots</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h4>Promotions</h4>
+        <ul class="footer__links">
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Welcome Bonus</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Weekly Cashback</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">VIP Programme</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Tournaments</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h4>Support</h4>
+        <ul class="footer__links">
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Help Centre</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Contact Us</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Payment Methods</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h4>Legal</h4>
+        <ul class="footer__links">
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Terms & Conditions</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Bonus Terms</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Privacy Policy</a></li>
+          <li><a href="#__WY2DS_2UL__" class="footer__link" rel="nofollow" target="_blank">Responsible Gaming</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__license">
+        <p><strong>Licence Information:</strong> BonusKong Casino is operated under a gaming licence issued by Curaçao eGaming (Licence No. 1668/JAZ). The licence ensures compliance with international gaming standards for player protection, fair play, and secure transactions.</p>
+        <p style="margin-top: var(--space-sm);">Gambling can be addictive. Please play responsibly and only wager what you can afford to lose. If you need help, contact <a href="https://www.begambleaware.org" style="color: var(--clr-banana);" rel="nofollow" target="_blank">BeGambleAware.org</a> or <a href="https://www.gamcare.org.uk" style="color: var(--clr-banana);" rel="nofollow" target="_blank">GamCare.org.uk</a>.</p>
+        <p style="margin-top: var(--space-sm);">Reviewed by  — Independent Casino Reviews</p>
+      </div>
+      <p class="footer__copyright" style="margin-top: var(--space-md);">&copy; 2024 BonusKong Casino. All rights reserved. Players must be 18 years or older.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq__question').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.parentElement;
+    const isActive = item.classList.contains('active');
+    
+    document.querySelectorAll('.faq__item').forEach(i => {
+      i.classList.remove('active');
+      i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+    });
+    
+    if (!isActive) {
+      item.classList.add('active');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
